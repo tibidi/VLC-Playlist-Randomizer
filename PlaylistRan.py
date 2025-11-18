@@ -57,6 +57,18 @@ from collections import namedtuple
 
 import randomize
 import sort
+import sys
+import os
+
+args = sys.argv[1:]
+
+if len(args) >= 1:
+    print(args)
+    randomize.ran(args[0], os.path.dirname(args[0]) + "/Random-" + os.path.basename(args[0]))
+    sys.exit(0)    
+    
+
+
 
 print('-------------------------------')
 print('Martin Barker VLC Playlist Tool')
